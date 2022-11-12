@@ -68,13 +68,89 @@
           <button class="button heading-button" type="button" data-modal-open>
             Zamów usługe
           </button>
+          <!-- modal windows -->
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button class="modal-btn" data-modal-close>
-                <svg width="30px" height="30px">
+                <svg class="modal-btn-close" width="11px" height="11px">
                   <use href="./images/icons.svg#icon-close"></use>
                 </svg>
               </button>
+              <form class="modal-form">
+                <div
+                  class="modal-form-group"
+                  role="group"
+                  aria-labelledby="modal-form-group"
+                >
+                  <h2 class="modal-form-title" id="modal-form-group">
+                    Zostaw swoje dane w formularzu poniżej
+                  </h2>
+                </div>
+                <label class="modal-form-description">
+                  Imię
+                  <div class="modal-form-wrapper">
+                    <svg class="modal-form-icons" width="18px" height="18px">
+                      <use href="./images/icons.svg#icon-name"></use>
+                    </svg>
+                    <input class="modal-form-items" type="text" name="name" />
+                  </div>
+                </label>
+                <label class="modal-form-description">
+                  Telefon
+                  <div class="modal-form-wrapper">
+                    <svg class="modal-form-icons" width="18px" height="18px">
+                      <use href="./images/icons.svg#icon-telephone"></use>
+                    </svg>
+                    <input
+                      class="modal-form-items"
+                      type="tel"
+                      name="phone-number"
+                    />
+                  </div>
+                </label>
+                <label class="modal-form-description">
+                  Email
+                  <div class="modal-form-wrapper">
+                    <svg class="modal-form-icons" width="18px" height="18px">
+                      <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                    <input class="modal-form-items" type="email" name="email" />
+                  </div>
+                </label>
+                <label class="modal-form-description">
+                  Komentarz
+                  <textarea
+                    class="modal-form-comment"
+                    type="text"
+                    name="name"
+                    rows="7"
+                    placeholder="Wprowadź tekst"
+                  ></textarea>
+                </label>
+              </form>
+              <form class="modal-rule">
+                <label class="modal-rule-label">
+                  <input
+                    class="modal-rule-check"
+                    type="checkbox"
+                    name="rule-accept"
+                  />
+                  <p>
+                    Oświadczam iż akceptuję
+                    <a href="" class="modal-rule-links">Regulamin</a>
+                    i
+                    <a href="" class="modal-rule-links"
+                      >Politykę Prywatności.</a
+                    >
+                  </p>
+                  <div class="modal-rule-checkmark">
+                    <svg class="modal-rule-icon" width="11px" height="8px">
+                      <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                  </div>
+                </label>
+              </form>
+              <button class="modal-btn-submit" type="submit">Wyślij</button>
             </div>
           </div>
         </div>
@@ -468,6 +544,23 @@
             </li>
           </ul>
         </div>
+        <form class="newsletter-wrapper" name="newsletter">
+          <label class="newsletter-description"
+            >Zapisz się do newslettera
+            <input
+              class="newsletter-email"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+          </label>
+          <button class="newsletter-btn" type="submit">
+            Zapisz się
+            <svg class="newsletter-icon" width="24px" height="24px">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
