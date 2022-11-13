@@ -279,34 +279,18 @@ figure {
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
-@keyframes changeBorderColor {
-  0% {
-    border-color: rgba(33, 33, 33, 0.2);
-  }
-  100% {
-    border-color: var(--brand-color);
-  }
-}
-@keyframes changeFillColor {
-  0% {
-    fill: var(--main-text-color);
-  }
-  100% {
-    fill: var(--brand-color);
-  }
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-wrapper:focus-within {
-  animation-name: changeBorderColor;
-  animation-duration: 250ms;
-  animation-timing-function: (0.4, 0, 0.2, 1);
-  animation-fill-mode: forwards;
+  border-color: var(--brand-color);
 }
 .modal-form-wrapper:focus-within .modal-form-icons {
-  animation-name: changeFillColor;
-  animation-duration: 250ms;
-  animation-timing-function: (0.4, 0, 0.2, 1);
-  animation-fill-mode: forwards;
+  fill: var(--brand-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-icons {
   margin: 0 12px;
@@ -329,12 +313,16 @@ figure {
   letter-spacing: 0.01em;
   line-height: 1.17;
   outline: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-comment:focus {
-  animation-name: changeBorderColor;
+  border-color: var(--brand-color);
+  /* animation-name: changeBorderColor;
   animation-duration: 250ms;
   animation-timing-function: (0.4, 0, 0.2, 1);
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
 }
 .modal-rule {
   margin-top: 20px;
