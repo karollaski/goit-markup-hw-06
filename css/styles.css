@@ -279,9 +279,6 @@ figure {
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  /* transition-property: border-color, fill;
-  transition-property: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 @keyframes changeBorderColor {
   0% {
@@ -300,14 +297,12 @@ figure {
   }
 }
 .modal-form-wrapper:focus-within {
-  /* border-color: var(--brand-color); */
   animation-name: changeBorderColor;
   animation-duration: 250ms;
   animation-timing-function: (0.4, 0, 0.2, 1);
   animation-fill-mode: forwards;
 }
 .modal-form-wrapper:focus-within .modal-form-icons {
-  /* fill: var(--brand-color); */
   animation-name: changeFillColor;
   animation-duration: 250ms;
   animation-timing-function: (0.4, 0, 0.2, 1);
@@ -334,12 +329,8 @@ figure {
   letter-spacing: 0.01em;
   line-height: 1.17;
   outline: none;
-  /* transition-property: border-color;
-  transition-property: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .modal-form-comment:focus {
-  /* border-color: var(--brand-color); */
   animation-name: changeBorderColor;
   animation-duration: 250ms;
   animation-timing-function: (0.4, 0, 0.2, 1);
@@ -355,7 +346,6 @@ figure {
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  /* display: block; */
   position: relative;
   line-height: 1.71;
   cursor: pointer;
@@ -368,8 +358,6 @@ figure {
   width: 0;
 }
 .modal-rule-checkmark {
-  /* display: inline-block; */
-  /* margin-block: auto; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -576,7 +564,6 @@ figure {
 .foot-wrapper {
   display: flex;
   align-items: baseline;
-  /* gap: 70px; */
 }
 .foot-contact-wrapper {
   margin-right: 70px;
